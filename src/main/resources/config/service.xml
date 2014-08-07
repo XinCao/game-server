@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+    <bean id="actionService" class="com.xincao.action_container.ActionService"/>
+    <bean id="enhanceItemService" class="com.xincao.game.server.service.EnhanceItemService" depends-on="actionService" init-method="init"/>
+</beans>

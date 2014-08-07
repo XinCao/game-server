@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xincao.game.server.mapper.EnhanceItemMapper" >
+    <resultMap id="BaseResultMap" type="com.xincao.game.server.model.EnhanceItem" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="action_name" property="actionName" jdbcType="VARCHAR" />
+        <result column="condition" property="condition" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+        id, action_name, condition
+    </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select 
+        <include refid="Base_Column_List" />
+        from enhance_item
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select
+            <include refid="Base_Column_List" />
+        from
+            enhance_item
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from enhance_item
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="com.xincao.game.server.model.EnhanceItem" >
+        insert into enhance_item (id, action_name, condition
+        )
+        values (#{id,jdbcType=INTEGER}, #{actionName,jdbcType=VARCHAR}, #{condition,jdbcType=VARCHAR}
+        )
+    </insert>
+    <insert id="insertSelective" parameterType="com.xincao.game.server.model.EnhanceItem" >
+        insert into enhance_item
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="actionName != null" >
+                action_name,
+            </if>
+            <if test="condition != null" >
+                condition,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="actionName != null" >
+                #{actionName,jdbcType=VARCHAR},
+            </if>
+            <if test="condition != null" >
+                #{condition,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.xincao.game.server.model.EnhanceItem" >
+        update enhance_item
+        <set >
+            <if test="actionName != null" >
+                action_name = #{actionName,jdbcType=VARCHAR},
+            </if>
+            <if test="condition != null" >
+                condition = #{condition,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.xincao.game.server.model.EnhanceItem" >
+        update enhance_item
+        set action_name = #{actionName,jdbcType=VARCHAR},
+        condition = #{condition,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

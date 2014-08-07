@@ -87,4 +87,9 @@
             <value>com.xincao.game.server.mapper.MailMapper</value>
         </property>
     </bean>
+    <bean id="enhanceItemMapper" class="org.mybatis.spring.mapper.MapperFactoryBean" autowire="byType">
+        <property name="mapperInterface">
+            <value>com.xincao.game.server.mapper.EnhanceItemMapper</value>
+        </property>
+    </bean>
 </beans>

@@ -12,10 +12,12 @@
         <typeAlias type="com.xincao.game.server.model.Player" alias="Player" />
         <typeAlias type="com.xincao.game.server.model.MailBox" alias="MailBox" />
         <typeAlias type="com.xincao.game.server.model.Mail" alias="Mail" />
+        <typeAlias type="com.xincao.game.server.model.EnhanceItem" alias="EnhanceItem" />
     </typeAliases>
     <mappers>
         <mapper resource="PlayerMapper.xml" />
         <mapper resource="MailBoxMapper.xml" />
         <mapper resource="MailMapper.xml" />
+        <mapper resource="EnhanceItemMapper.xml" />
     </mappers>
 </configuration>
