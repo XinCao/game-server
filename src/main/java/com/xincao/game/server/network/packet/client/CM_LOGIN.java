@@ -1,5 +1,7 @@
 package com.xincao.game.server.network.packet.client;
 
+import com.xincao.common.event.dispatcher.GameEventDispatcher;
+import com.xincao.game.server.event.WorldEvents;
 import com.xincao.game.server.log.LogService;
 import com.xincao.game.server.log.LogServiceImplementWithLogback;
 import com.xincao.game.server.model.Player;
@@ -12,6 +14,7 @@ public class CM_LOGIN extends AionClientPacket {
     private String account;
     private static final PlayerService playerService = getBean(PlayerService.class);
     private static final LogService logService = getBean(LogServiceImplementWithLogback.class);
+    private static final GameEventDispatcher gameEventDispatcher = getBean(GameEventDispatcher.class);
 
     public CM_LOGIN(ByteBuffer buf, AionConnection client, Integer opcode) {
         super(buf, client, opcode);
@@ -24,6 +27,7 @@ public class CM_LOGIN extends AionClientPacket {
 
     @Override
     protected void runImpl() {
+        gameEventDispatcher.triggerEvent(WorldEvents.LOGIN, account);
         if (!playerService.haveLogin(account)) {
             Player player = playerService.load(account, this.getConnection());
             playerService.addPlayer(player);

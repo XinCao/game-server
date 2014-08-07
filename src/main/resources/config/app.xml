@@ -20,4 +20,5 @@
     </bean>
     <context:component-scan base-package="com.xincao.game.server"/>
     <import resource="mybatis.xml" />
+    <import resource="event_listener.xml"/>
 </beans>

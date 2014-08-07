@@ -14,6 +14,5 @@ public class GameServer {
     public static void main(String[] args) {
         ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:config/app.xml");
         AionNioServer.start();
-
     }
 }
