@@ -1,11 +1,11 @@
-package com.xincao.game.server.network.packet.client;
+package com.xincao.game.server.network.client;
 
 import com.xincao.common.event.dispatcher.GameEventDispatcher;
 import com.xincao.game.server.event.WorldEvents;
 import com.xincao.game.server.log.LogService;
 import com.xincao.game.server.log.LogServiceImplementWithLogback;
 import com.xincao.game.server.model.Player;
-import com.xincao.game.server.network.core.AionConnection;
+import com.xincao.game.server.core.network.AionConnection;
 import com.xincao.game.server.service.PlayerService;
 import java.nio.ByteBuffer;
 

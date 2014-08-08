@@ -1,4 +1,4 @@
-package com.xincao.game.server.network.core;
+package com.xincao.game.server.core.network;
 
 import java.io.IOException;
 import java.nio.channels.SocketChannel;

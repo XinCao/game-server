@@ -2,7 +2,7 @@ package com.xincao.game.server;
 
 import org.springframework.context.ApplicationContext;
 
-import com.xincao.game.server.network.AionNioServer;
+import com.xincao.game.server.core.network.AionNioServer;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**

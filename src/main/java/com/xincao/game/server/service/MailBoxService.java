@@ -11,8 +11,8 @@ import com.xincao.game.server.model.IntPair;
 import com.xincao.game.server.model.Mail;
 import com.xincao.game.server.model.MailBox;
 import com.xincao.game.server.model.Player;
-import com.xincao.game.server.network.core.AionPacketHandler.AionServerKind;
-import com.xincao.game.server.network.packet.server.SM_MAILLIST_INFO;
+import com.xincao.game.server.core.network.AionPacketHandler.AionServerKind;
+import com.xincao.game.server.network.server.SM_MAILLIST_INFO;
 import java.util.ArrayList;
 
 @Service

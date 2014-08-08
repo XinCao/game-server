@@ -1,4 +1,4 @@
-package com.xincao.game.server.action;
+package com.xincao.game.server.action.EnhanceItem;
 
 import com.xincao.action_container.AbstractAction;
 import com.xincao.action_container.Action;

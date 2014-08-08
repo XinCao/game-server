@@ -1,12 +1,12 @@
-package com.xincao.game.server.network.packet.server;
+package com.xincao.game.server.network.server;
 
 import java.nio.ByteBuffer;
 import java.util.List;
 import com.xincao.game.server.model.Mail;
 import com.xincao.game.server.model.MailBox;
 import com.xincao.game.server.model.Player;
-import com.xincao.game.server.network.core.AionConnection;
-import com.xincao.game.server.network.packet.Config;
+import com.xincao.game.server.core.network.AionConnection;
+import com.xincao.game.server.constant.Config;
 
 /**
  * 向客户端显示的邮件，不能大于邮箱容量

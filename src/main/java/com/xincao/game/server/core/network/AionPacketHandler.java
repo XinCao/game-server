@@ -1,4 +1,4 @@
-package com.xincao.game.server.network.core;
+package com.xincao.game.server.core.network;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -7,16 +7,16 @@ import java.util.HashMap;
 import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.xincao.game.server.network.core.AionConnection.State;
-import com.xincao.game.server.network.packet.client.AionClientPacket;
-import com.xincao.game.server.network.packet.client.CM_DELETE_MAIL;
-import com.xincao.game.server.network.packet.client.CM_LOGIN;
-import com.xincao.game.server.network.packet.client.CM_MAILLIST_INFO;
-import com.xincao.game.server.network.packet.client.CM_READ_MAIL;
-import com.xincao.game.server.network.packet.client.CM_SEND_MAIL;
-import com.xincao.game.server.network.packet.server.AionServerPacket;
-import com.xincao.game.server.network.packet.server.SM_HEART_BEAT;
-import com.xincao.game.server.network.packet.server.SM_MAILLIST_INFO;
+import com.xincao.game.server.core.network.AionConnection.State;
+import com.xincao.game.server.network.client.AionClientPacket;
+import com.xincao.game.server.network.client.CM_DELETE_MAIL;
+import com.xincao.game.server.network.client.CM_LOGIN;
+import com.xincao.game.server.network.client.CM_MAILLIST_INFO;
+import com.xincao.game.server.network.client.CM_READ_MAIL;
+import com.xincao.game.server.network.client.CM_SEND_MAIL;
+import com.xincao.game.server.network.server.AionServerPacket;
+import com.xincao.game.server.network.server.SM_HEART_BEAT;
+import com.xincao.game.server.network.server.SM_MAILLIST_INFO;
 
 public class AionPacketHandler {
 

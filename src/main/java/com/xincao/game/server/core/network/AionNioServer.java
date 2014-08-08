@@ -1,7 +1,6 @@
-package com.xincao.game.server.network;
+package com.xincao.game.server.core.network;
 
 import com.xincao.common.util.tool.DeadLockDetector;
-import com.xincao.game.server.network.core.IOServer;
 
 /**
  *

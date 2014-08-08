@@ -1,7 +1,7 @@
-package com.xincao.game.server.network.packet.server;
+package com.xincao.game.server.network.server;
 
 import com.xincao.game.server.model.Player;
-import com.xincao.game.server.network.core.AionConnection;
+import com.xincao.game.server.core.network.AionConnection;
 import java.nio.ByteBuffer;
 
 /**

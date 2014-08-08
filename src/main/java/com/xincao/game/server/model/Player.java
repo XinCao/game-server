@@ -1,7 +1,7 @@
 package com.xincao.game.server.model;
 
 import com.xincao.common.nio.IConnection;
-import com.xincao.game.server.network.core.AionConnection;
+import com.xincao.game.server.core.network.AionConnection;
 
 public class Player extends Root {
 

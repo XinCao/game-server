@@ -1,5 +1,6 @@
-package com.xincao.game.server.network.core;
+package com.xincao.game.server.core.network;
 
+import com.xincao.game.server.core.ThreadPoolManager;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
@@ -12,11 +13,10 @@ import org.slf4j.LoggerFactory;
 import com.xincao.common.nio.IConnection;
 import com.xincao.common.nio.IODispatcher;
 import com.xincao.game.server.model.Player;
-import com.xincao.game.server.network.packet.client.AionClientPacket;
-import com.xincao.game.server.network.packet.server.AionServerPacket;
+import com.xincao.game.server.network.client.AionClientPacket;
+import com.xincao.game.server.network.server.AionServerPacket;
 import com.xincao.game.server.service.PlayerService;
 import com.xincao.game.server.util.AC;
-import com.xincao.game.server.util.ThreadPoolManager;
 
 public class AionConnection extends IConnection {
 

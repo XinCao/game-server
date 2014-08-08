@@ -1,10 +1,10 @@
-package com.xincao.game.server.network.packet.client;
+package com.xincao.game.server.network.client;
 
 import java.nio.ByteBuffer;
 import org.springframework.context.ApplicationContext;
 import com.xincao.common.nio.packet.BaseClientPacket;
-import com.xincao.game.server.network.core.AionConnection;
-import com.xincao.game.server.network.packet.server.AionServerPacket;
+import com.xincao.game.server.core.network.AionConnection;
+import com.xincao.game.server.network.server.AionServerPacket;
 import com.xincao.game.server.util.AC;
 
 public abstract class AionClientPacket extends BaseClientPacket<AionConnection> {

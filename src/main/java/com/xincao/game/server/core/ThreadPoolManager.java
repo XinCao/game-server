@@ -1,4 +1,4 @@
-package com.xincao.game.server.util;
+package com.xincao.game.server.core;
 
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.RejectedExecutionException;

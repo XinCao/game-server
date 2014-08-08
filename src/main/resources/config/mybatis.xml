@@ -39,7 +39,7 @@
             <value>60000</value>
         </property>
     </bean>
-    <bean id="poolableConnectionFactory" class="com.xincao.game.server.util.PoolableConnectionFactoryAE">
+    <bean id="poolableConnectionFactory" class="com.xincao.game.server.core.PoolableConnectionFactoryAE">
         <constructor-arg index="0">
             <ref bean="connectionFactory"/>
         </constructor-arg>
