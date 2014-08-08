@@ -24,11 +24,11 @@ public class EnhanceItemService {
     private ActionService actionService;
 
     public void init () {
-        List<EnhanceItem> enhanceItems = enhanceItemMapper.selectAll();
-        for (EnhanceItem enhanceItem : enhanceItems) {
-            IAction iaction = actionService.getAction(enhanceItem.getActionName());
-            iaction.setArguments(enhanceItem.getCondition());
-        }
+//        List<EnhanceItem> enhanceItems = enhanceItemMapper.selectAll();
+//        for (EnhanceItem enhanceItem : enhanceItems) {
+//            IAction iaction = actionService.getAction(enhanceItem.getActionName());
+//            iaction.setArguments(enhanceItem.getCondition());
+//        }
     }
 
     public void open (Player player, int no ) {
