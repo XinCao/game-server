@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class GameServer {
 
-    public static void main(String[] args) {
+    public static void main(String ... args) {
         ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:config/app.xml");
         AionNioServer.start();
     }

@@ -9,6 +9,7 @@ public class AC implements ApplicationContextAware {
 
     private static ApplicationContext ac;
 
+    @Override
     public void setApplicationContext(ApplicationContext ac) {
         AC.ac = ac;
     }
