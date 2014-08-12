@@ -2,7 +2,7 @@ package com.xincao.game.server.constant;
 
 public enum EnhanceItemType {
     SAMPLE (1, "sample"),
-    
+
     ;
     private final int no;
     private final String name;
